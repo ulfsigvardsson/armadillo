@@ -1,7 +1,5 @@
 # Armadillo
 
-__OSPP (1DT096) 2018 - Project iota__
-
 Armadillo is a very simple operating system for the MIPS Malta board, created as a group project in _Operating systems and process oriented programming_ (1DT096), spring 2018, _Uppsala university_.
 
 ## Prerequisites
@@ -62,80 +60,6 @@ Debugging Armadillo requires ``GDB``. Start by running the OS in debug mode, and
 > make gdb
 ```
 
-## Structure
-
-```bash
-.
-├── Doxyfile
-├── Makefile
-├── README.md
-├── bin
-├── docs
-├── guidelines
-│   ├── git.md
-│   └── styleguide.md
-├── meta
-│   ├── gruppkontrakt.md
-│   ├── medlemmar.md
-│   └── meetings
-├── obj
-├── src
-│   ├── common
-│   │   ├── k_rand.c
-│   │   ├── memory.c
-│   │   ├── queue.c
-│   │   ├── stack.c
-│   │   ├── stdio.c
-│   │   └── stdlib.c
-│   ├── include
-│   │   ├── common
-│   │   │   ├── k_rand.h
-│   │   │   ├── math.h
-│   │   │   ├── memory.h
-│   │   │   ├── processes.h
-│   │   │   ├── queue.h
-│   │   │   ├── stack.h
-│   │   │   ├── stdint.h
-│   │   │   ├── stdio.h
-│   │   │   └── stdlib.h
-│   │   ├── kernel
-│   │   │   ├── dispatcher.h
-│   │   │   ├── exceptions.h
-│   │   │   └── pcb.h
-│   │   └── mips
-│   │       ├── adresses.h
-│   │       ├── bitmasks.h
-│   │       └── registers.h
-│   ├── kernel
-│   │   ├── boot.S
-│   │   ├── context_switch.S
-│   │   ├── dispatcher.c
-│   │   ├── exceptions.S
-│   │   ├── kernel.c
-│   │   ├── pcb.c
-│   │   ├── processes.c
-│   │   ├── rand.S
-│   │   └── timer.S
-│   └── linker.ld
-└── tests
-    ├── include
-    │   ├── minunit
-    │   │   └── unit.h
-    │   ├── test_dispatcher.h
-    │   ├── test_memory.h
-    │   ├── test_stack.h
-    │   └── test_stdlib.h
-    ├── kernel
-    │   ├── test_boot.S
-    │   ├── test_exception.S
-    │   └── test_kernel.c
-    ├── linker.ld
-    ├── test_dispatcher.c
-    ├── test_main.c
-    ├── test_memory.c
-    ├── test_stack.c
-    └── test_stdlib.c
-```
 
 ## Documentation
 
